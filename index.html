@@ -20,14 +20,32 @@
   <main>
 
     <div class="card">
-      <img src="./images/image-product-mobile.jpg" alt="Chanel Gabrielle glass perfume bottle lying flat on white surface with green leaves on either side.">
-      Perfume
-      <h1>Gabrielle Essence Eau De Parfum</h1>
-      A floral, solar and voluptuous interpretation composed by Olivier Polge,
-      Perfumer-Creator for the House of CHANEL.
-      <h1>$149.99</h1>
-      $169.99
-      <button>Add to Cart</button>
+      <picture> 
+        <source srcset="./images/image-product-mobile.jpg" media="(max-width:599px)"> 
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 600px)">
+        <img src="./images/image-product-mobile.jpg" alt="Glass Chanel perfume bottle on white surface with decorative leaves around it">
+      </picture>
+
+      <div class="content">
+        <div class="category">Perfume</div>
+          
+          <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+
+          <p class="product-description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+          </p>
+
+        
+          <div class="pricing">
+            <div class="current-price">$149.99</div>
+            <div class="was-price">$169.99</div>
+          </div>
+        
+
+        <button>Add to Cart</button>
+
+      </div>
     </div>
     
   </main>
